@@ -1,0 +1,21 @@
+ <template> 
+  <lightning-card title = 'LWC Component' icon-name = 'standard: account'>
+  <P> Name : {name} </P>
+   
+   <lightning-input label = 'Employee' onChangne = {handleChangne}>
+   <lightning-button label ='Submit' onclick = {handleSumbit}> </lightning-button>
+
+   </lightning-card>
+</template>
+   
+*********************************************************************************************   
+   
+name = 'Gaurav Rangne';
+   handleSumbit(event)
+   {
+     alert ('This is sample LWC Component');
+     this.name = Gaurav Rangney;
+   }
+handleChangne(event){
+  this.name = target.name.value;
+}
