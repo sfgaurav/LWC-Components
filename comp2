@@ -1,0 +1,22 @@
+kya karna ha, card, title, input, button
+HTML
+<template> 
+<lightning-card title = 'LWC Componet' icon-name = 'standart:account>
+
+<P> {name} </p>
+<lightning-input label = 'Employee' onchangne= {handleChange}> </lightning-input>
+<lightning-button label = 'Submit' onClick = {handleSubmit}> </lightning-button>
+  </lightning-card>
+
+  js
+    name = gaurav Rangne'
+  
+handleChange(event){
+  this.name=event.target.value
+}
+handleSubmit(event){
+  alert('This is a Sample LWC Component');
+  this.name='Gaurav Rangney';
+  
+}
+  
